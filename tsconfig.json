@@ -1,0 +1,25 @@
+{
+  "version": "2.5.3",
+  "compilerOptions": {
+    "baseUrl": "@types",
+    "outDir": "build/dist",
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": false
+  },
+  "exclude": [
+    "dist",
+    "build",
+    "public",
+    "node_tool",
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}

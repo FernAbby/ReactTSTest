@@ -1,0 +1,42 @@
+{
+  "name": "aims",
+  "version": "1.0.0",
+  "description": "人工智能管理系统(aims)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --process --colors --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.chinamcloud.com/front/aims.git"
+  },
+  "keywords": [
+    "人工智能管理系统(aims)"
+  ],
+  "author": "wenzhen",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "eslint": "^5.2.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-typescript": "^0.12.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "moment": "^2.22.2",
+    "ts-loader": "^4.4.2",
+    "typescript-eslint-parser": "^17.0.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
