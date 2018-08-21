@@ -1,5 +1,10 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
+import {LocaleProvider} from 'antd';
+import zhCN from 'antd/lib/locale-provider/zh_CN';
+import App from './App';
+import store from './redux/Store';
 import App from './App';
 
 declare global {
@@ -16,7 +21,11 @@ declare global {
 }
 
 ReactDOM.render(
-    <App/>,
+    <LocaleProvider locale={zhCN}>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </LocaleProvider>,
     document.getElementById('root')
 );
 

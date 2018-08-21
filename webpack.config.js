@@ -33,25 +33,23 @@ module.exports = {
         rules: [{
             test: /\.(js|jsx|mjs)$/,
             use: [
+                'babel-loader',
                 {
                     loader: 'eslint-loader',
                 },
-                'babel-loader'
             ],
             exclude: /node_modules/,
             include: /src/
         },{
             test: /\.(ts|tsx)$/,
-            use: [
-                {
-                    loader: 'ts-loader',
-                    options: {
-                        transpileOnly: true,
-                    },
-                },{
-                    loader: 'eslint-loader',
-                }
-            ],
+            use: [{
+                loader: 'ts-loader',
+                options: {
+                    transpileOnly: true,
+                },
+            },{
+                loader: 'eslint-loader',
+            }],
             exclude: /node_modules/,
             include: /src/,
         },{

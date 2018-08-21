@@ -1,0 +1,148 @@
+//网站字体
+@font-family: 'Helvetica Neue', "Microsoft Yahei", "微软雅黑", "STXihei", "WenQuanYi Micro Hei", FontAwesome, sans-serif;
+
+//icon颜色
+@icon-normal: rgba(49,70,89,1); //icon颜色
+
+//背景色
+@background-white: #ffffff;//白色背景
+@background-blue: #f1f5f8;//蓝色背景
+@background-grey: #eaeff0;//灰色背景
+@background-green: #cfe0e6;//水蓝色背景
+
+//字体颜色
+@font-placeholder: #999; //#787878;//字体颜色
+@font-normal: rgb(49,70,89,.8);//#314659 #565656;//字体颜色
+@font-deep: #434343; //#242424 //字体颜色
+@font-submenu: #434343;//菜单字体颜色
+@font-blue: #3b86de;//蓝色字体
+
+//主题色
+@theme-normal:#2ba7d7;
+@theme-deep:#1597D7;
+
+//边框色
+@border-light: #e8e8e8;
+@border-normal: #ccc;
+@border-blue: #40a9ff;
+@border-deep: #aaa;
+//@border-deep: #40a9ff;
+
+//警告框颜色
+@color-success: #b7eb8f;
+@background-success: #f6ffed;
+
+@color-success: #b7eb8f;
+
+@color-info: #91d5ff;
+@background-info: #e6f7ff;
+
+@color-warning: #ffe58f;
+@background-warning: #fffbe6;
+
+@color-error: #ffa39e;
+@background-error: #fff1f0;
+
+//全局设置
+body{
+  width: auto !important;
+  //height: auto !important;
+  padding: 0 !important;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: @font-family !important;
+}
+body {
+  font-size:14px;
+  line-height: 1.42857143;
+  color: @font-normal;
+  background: @background-grey;
+}
+ul,li{
+  list-style: none;
+}
+input::-webkit-input-placeholder{
+  font-size: 13px !important;
+  color: @font-placeholder !important;
+}
+input::-webkit-input-placeholder{
+  font-size: 13px !important;
+  color: @font-placeholder !important;
+}
+input::-moz-placeholder{
+  font-size: 14px !important;
+  color: @font-placeholder !important;
+}
+input:-moz-placeholder{
+  font-size: 14px !important;
+  color: @font-placeholder !important;
+}
+input:-moz-placeholder{
+  font-size: 13px !important;
+  color: @font-placeholder !important;
+}
+input:-ms-input-placeholder{
+  font-size: 13px !important;
+  color: @font-placeholder !important;
+}
+
+.flexcenter{
+  -ms-justify-content:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -ms-justify:center;
+  -webkit-justify:center;
+  justify:center;
+  -ms-box-align:center;
+  -webkit-box-align:center;
+  box-align:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
+  align-items:center
+}
+
+.displayflex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flexflowCol{
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.flexflowRow{
+  -webkit-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.border-radius{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}

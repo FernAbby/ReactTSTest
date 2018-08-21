@@ -16,9 +16,11 @@ class App extends React.Component{
         }
     }
     render(){
+        const {test,student} = this.state;
         return (
             <div>
-                <div>{this.state.test}</div>
+                <div>{test}</div>
+                <div>{student.name}</div>
             </div>
         );
     }
